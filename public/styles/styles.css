@@ -435,6 +435,9 @@ section {
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
 }
+.blogs .blog a{
+  width: 100%;
+}
 .blogs .blog .blog-text {
   margin-top: -7px;
   padding: 1.1rem;
