@@ -382,23 +382,26 @@
             </div>
           </div>
           <div class="right-contact">
-            <form action="" class="contact-form">
+            <form action="https://api.staticforms.xyz/submit" method="post" class="contact-form">
               <div class="input-control i-c-2">
-                <input type="text" required placeholder="SEU NOME">
-                <input type="email" required placeholder="SEU EMAIL">
+                <input type="hidden" name="accessKey" value="8d501d49-0229-493c-ba8b-3077a59b4b26">
+                <input type="text" name="name" required placeholder="SEU NOME">
+                <input type="email" name="email" required placeholder="SEU EMAIL">
               </div>
               <div class="input-control">
-                <input type="text" required placeholder="ASSUNTO">
+                <input type="text" name="assunto" required placeholder="ASSUNTO">
               </div>
               <div class="input-control">
-                <textarea name="" id="" cols="15" rows="8" placeholder="Digite aqui sua mensagem..."></textarea>
+                <textarea name="message" id="" cols="15" rows="8" placeholder="Digite aqui sua mensagem..."></textarea>
               </div>
+              <button type="submit">Enviar</button>
               <div class="submit-btn">
                 <a href="#" class="main-btn">
                   <span class="btn-text">Enviar Mensagem</span>
                   <span class="btn-icon"><i class="fa fa-arrow-right"></i></span>
                 </a>
               </div>
+              <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
             </form>
           </div>
         </div>
