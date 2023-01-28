@@ -49,6 +49,13 @@ a {
   color: inherit;
   font-family: inherit;
 }
+button {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  background-color: transparent;
+}
 
 header {
   min-height: 100vh;
@@ -588,6 +595,7 @@ section {
 
 .main-btn .btn-text {
   padding: 0 2rem;
+  font-size: 17.6px;
 }
 .main-btn .btn-icon {
   background-color: var(--color-secondary);
