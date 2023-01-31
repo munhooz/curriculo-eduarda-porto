@@ -576,6 +576,93 @@ section {
   justify-content: flex-start;
 }
 
+/*Gallery content*/
+.gallery-tittle h2 {
+  font-size: 3rem !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.gallery-tittle h4{
+  font-size: 2rem;
+  padding: 20px;
+  padding-top: 3rem;
+}
+.gallery-subtittle h4{
+  font-size: 2rem;
+  padding: 20px;
+  padding-top: 5rem;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+.gallery-itens {
+  position: relative;
+}
+.gallery-itens img {
+  width: 100%;
+  min-width: 280px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+.gallery-itens img:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+.gallery-carousel {
+  visibility: hidden;
+  opacity: 0;
+}
+.gallery-carousel:target {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(10, 10, 10, 0.7);
+  position:  fixed;
+}
+.gallery-carousel:target .gallery-navigation img {
+  opacity: 1;
+  transition: opacity .4s linear;
+}
+.gallery-navigation {
+  width: 1000px;
+  max-width: 1000px;
+  margin: 150px auto;
+}
+.gallery-navigation .btn {
+  color: #fff;
+  font-family: 'Arial';
+  text-decoration: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+.gallery-navigation #previous {
+  left: 5%;
+  top: 45%;
+}
+.gallery-navigation #next {
+  right: 5%;
+  top: 45%;
+}
+.gallery-navigation #close {
+  top: 0;
+  right: 2%;
+}
+.gallery-navigation img {
+  opacity: 0;
+}
+
 /*Independed components*/
 .btn-con {
   display: flex;
@@ -736,6 +823,11 @@ section {
     padding-bottom: 6rem;
   }
 
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+
   .contact-content-con {
     flex-direction: column;
   }
@@ -818,12 +910,21 @@ section {
     margin-top: 6rem;
   }
 
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 6rem;
+  }
+
   .header-content .right-header {
     padding-right: 9rem;
   }
 }
 @media screen and (max-width: 660px) {
   .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery {
     grid-template-columns: repeat(1, 1fr);
   }
 }
