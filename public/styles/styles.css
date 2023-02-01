@@ -827,7 +827,7 @@ section {
     padding-bottom: 6rem;
   }
 
-  .gallery {
+  .gallery-center {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
@@ -914,7 +914,7 @@ section {
     margin-top: 6rem;
   }
 
-  .gallery {
+  .gallery-center {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 6rem;
   }
@@ -928,7 +928,7 @@ section {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .gallery {
+  .gallery-center {
     grid-template-columns: repeat(1, 1fr);
   }
 }
