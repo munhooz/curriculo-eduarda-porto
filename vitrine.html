@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Vitrine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="/public/styles/styles_gallery/style.css">
+</head>
+
+<body>
+  <div class="gallery-tittle">
+    <h1>VITRINE</h1>
+    <h2>Partage Shopping Betim</h2>
+  </div>
+  <div class="m-p-g-v">
+	<div class="m-p-g__thumbs vitrine" data-google-image-layout data-max-height="700">
+	  	<img src="/public/img_gallery/44.jpg" data-full="/public/img_gallery/44.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/50.jpg" data-full="/public/img_gallery/50.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/51.jpg" data-full="/public/img_gallery/51.jpg" class="m-p-g__thumbs-img" />
+	</div>
+	<div class="m-p-g__fullscreen"></div>
+  </div>
+<script>
+	var elem = document.querySelector('.m-p-g-v');
+
+	document.addEventListener('DOMContentLoaded', function() {
+		var gallery = new MaterialPhotoGallery(elem);
+	});
+</script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js'></script>
+</body>
+</html>

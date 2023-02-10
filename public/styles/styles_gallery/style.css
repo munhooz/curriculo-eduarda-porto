@@ -5,6 +5,15 @@
 .m-p-g-e {
   padding-bottom: 6em;
 }
+.m-p-g-v {
+  padding-bottom: 6em;
+}
+.vitrine img {
+  max-width: auto !important;
+  max-height: 700px !important;
+  min-width: 379px;
+  min-height: 700px;
+}
 .m-p-g__thumbs {
   display: flex;
   flex-wrap: wrap;
