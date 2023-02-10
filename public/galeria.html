@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="/public/styles/styles_gallery/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="ico/gallery/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="ico/gallery/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="ico/gallery/favicon-16x16.png">
+  <link rel="manifest" href="ico/gallery/site.webmanifest">
+</head>
+
+<body>
+  <div class="gallery-tittle">
+    <h1>GALERIA DE <span>FOTOS</span></h1>
+    <h2>Eventos</h2>
+  </div>
+  <div class="m-p-g">
+	<div class="m-p-g__thumbs" data-google-image-layout data-max-height="300">
+	  	<img src="/public/img_gallery/event1.jpg" data-full="/public/img_gallery/event1.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/event2.jpg" data-full="/public/img_gallery/event2.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/event3.jpg" data-full="/public/img_gallery/event3.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/event4.jpg" data-full="/public/img_gallery/event4.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/event5.jpg" data-full="/public/img_gallery/event5.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/event6.jpg" data-full="/public/img_gallery/event6.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/event7.jpg" data-full="/public/img_gallery/event7.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/event8.jpg" data-full="/public/img_gallery/event8.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/event9.jpg" data-full="/public/img_gallery/event9.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/event10.jpg" data-full="/public/img_gallery/event10.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/event11.jpg" data-full="/public/img_gallery/event11.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/event12.jpg" data-full="/public/img_gallery/event12.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/event13.jpg" data-full="/public/img_gallery/event13.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/event14.jpg" data-full="/public/img_gallery/event14.jpg" class="m-p-g__thumbs-img" />
+	</div>
+	<div class="m-p-g__fullscreen"></div>
+  </div>
+  <div class="gallery-tittle">
+    <h2>Cerimonial</h2>
+  </div>
+  <div class="m-p-g-e">
+	<div class="m-p-g__thumbs" data-google-image-layout data-max-height="300">
+	  	<img src="/public/img_gallery/flor1.jpg" data-full="/public/img_gallery/flor1.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/flor2.jpg" data-full="/public/img_gallery/flor2.jpg" class="m-p-g__thumbs-img" />
+	  	<img src="/public/img_gallery/flor3.jpg" data-full="/public/img_gallery/flor3.jpg" class="m-p-g__thumbs-img" />
+	</div>
+	<div class="m-p-g__fullscreen"></div>
+  </div>
+<script>
+	var elem = document.querySelector('.m-p-g');
+	var elem2 = document.querySelector('.m-p-g-e');
+
+	document.addEventListener('DOMContentLoaded', function() {
+		var gallery = new MaterialPhotoGallery(elem);
+		var gallery = new MaterialPhotoGallery(elem2);
+	});
+</script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js'></script>
+</body>
+</html>
